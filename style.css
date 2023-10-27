@@ -47,6 +47,29 @@ nav{
     font-size: 13px;
 }
 
+.text-color:hover{
+    color: #ff0000;
+}
+
+.nav-links li::after{
+    position: absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: red;
+    right: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+
+
+.nav-links li:hover::after,
+.nav-links li:hover a::before{
+    width: 13%;
+    padding: 0px 15px 0px 0px;
+}
+
 .text-box{
     width: 90%;
     color: #fff;
