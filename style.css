@@ -48,7 +48,11 @@ nav{
 }
 
 .text-color:hover{
-    color: #ff0000;
+    color: #ffffff;
+}
+
+.text-color{
+    font-size: 150%;
 }
 
 .nav-links li::after{
@@ -56,7 +60,7 @@ nav{
     content: "";
     height: 33.33%;
     width: 0;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     right: 0;
     z-index: 0;
     bottom: 0;
@@ -87,22 +91,8 @@ nav{
     font-size: 14px;
     color: #fff;
 }
-.hero-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-.hero-btn:hover{
-    border: 1px solid #82eefd;
-    background: #82eefd;
-    transition: 1s;
-}
+
+
 
 
 /* Despre */
@@ -212,9 +202,48 @@ h1{
    
 /* Galerie */
 
+.galerie{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.galerie-col{
+    flex-basis: 32%;
+    border-radius:  10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.galerie-col img{
+    width: 100%;
+}
+
+.layer{
+  background: rgba(226,0,0,0.7);
+  height: 100;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
 
 /* Caz Social */
 
+.titlu-caz{
+    text-align: center;
+
+}
+.text-caz{
+    padding-top: 2%;
+    text-align: center;
+}
 
 /* Formular */
 
@@ -272,6 +301,51 @@ h1{
 
 /* Contact */
 
+#containercontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+#containercontact div{
+    height: 370px;
+    width: 335px;
+    background-color: #fff3f3;
+    margin: 60px;
+    text-align: center;
+    border-radius: 32px;
+}
+
+textarea {
+    resize: none;
+    width: 85%;
+    height: 150px;
+}
+
+.emailc{
+    width: 70%;
+}
+
+h4{
+    font-size: 150%;
+    padding: 10px;
+    padding: 25px 0px 25px 0px;
+}
+
+#mesaj{
+    height: 35%;
+}
+
+/*
+#sectiunicontact{
+    transition: 0.5s;
+}
+
+#sectiunicontact:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+*/
 
 /* FAQ */
 
